@@ -10,7 +10,9 @@ const Header = () => {
         <header className={s.header}>
             <Navbar bg="light" expand="lg">
               <Container fluid>
-                <Navbar.Brand href="#">Lost and Found Portal</Navbar.Brand>
+                <NavLink to="/">
+                  <Navbar.Brand href="#Action" className={s.main_title}>Lost and Found Portal</Navbar.Brand>
+                </NavLink>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                   <Nav
@@ -21,9 +23,11 @@ const Header = () => {
                         <Nav.Link href="#action1">Home</Nav.Link>
                     </NavLink>
                     <Nav.Link href="#action2">Link</Nav.Link>
-                    <Nav.Link href="#">
-                      Link
-                    </Nav.Link>
+                    <NavLink to='autorizaton'>
+                      <Nav.Link href="#action2">
+                        Sign In
+                      </Nav.Link>
+                    </NavLink>
                   </Nav>
                   <Form className="d-flex">
                     <Form.Control
@@ -32,7 +36,7 @@ const Header = () => {
                       className="me-2"
                       aria-label="Search"
                     />
-                    <Button variant="outline-success">Search</Button>
+                    <Button variant="primary">Search</Button>
                   </Form>
                 </Navbar.Collapse>
               </Container>
