@@ -22,8 +22,12 @@ const Header = () => {
                     <NavLink to="/">
                         <Nav.Link href="#action1">Home</Nav.Link>
                     </NavLink>
-                    <Nav.Link href="#action2">Link</Nav.Link>
-                    <NavLink to='autorizaton'>
+                    <NavLink to='/profile'>
+                      <Nav.Link href="#action2">
+                        Profile
+                      </Nav.Link>
+                    </NavLink>
+                    <NavLink to='/autorizaton'>
                       <Nav.Link href="#action2">
                         Sign In
                       </Nav.Link>

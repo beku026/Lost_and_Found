@@ -21,3 +21,8 @@ code {
 a {
   text-decoration: none !important;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+}

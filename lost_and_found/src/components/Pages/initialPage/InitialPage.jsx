@@ -4,8 +4,9 @@ import { Button } from 'react-bootstrap';
 import s from './InitialPage.module.scss';
 
 const InitialPage = () => {
+    const autorization = true;
     return (
-        <div className={s.nav_block}>
+        <nav className={s.nav_block}>
                 <NavLink to="lost">
                     <Button variant="primary" size="lg" className={s.btn}>
                         Lost
@@ -16,7 +17,7 @@ const InitialPage = () => {
                         Found
                     </Button>
                 </NavLink>
-        </div>
+        </nav>
     );
 };
 

@@ -5,21 +5,23 @@ import Lost from '../Lost/Lost';
 import InitialPage from '../initialPage/InitialPage';
 import Layout from '../../Layout/Layout';
 import FormAutorization from '../FormAutorization/FormAutorization';
+import Profile from '../Profile/Profile';
 
 const Content = () => {
     return (
-        <main>
-            <Layout>
+        <Layout>
+            <main>
                 <Routes>
                     <Route path="/" element={<InitialPage/>} />
-                    <Route path="lost" element={<Lost/>}/>
-                    <Route path="found" element={<Found/>}/>
-                    <Route path="autorizaton" element={<FormAutorization/>}/>
+                    <Route path="/lost" element={<Lost/>}/>
+                    <Route path="/found" element={<Found/>}/>
+                    <Route path="/autorizaton" element={<FormAutorization/>}/>
+                    <Route path="/profile" element={<Profile/>}/>
                 </Routes>
-            </Layout>
-        </main>
+            </main>
+        </Layout>
         
     );
 };
 
-export default Content
+export default Content;
