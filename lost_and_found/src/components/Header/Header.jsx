@@ -32,6 +32,11 @@ const Header = () => {
                         Sign In
                       </Nav.Link>
                     </NavLink>
+                    <NavLink to='/foundItem'>
+                      <Nav.Link href="#action2">
+                        Found Item
+                      </Nav.Link>
+                    </NavLink>
                   </Nav>
                   <Form className="d-flex">
                     <Form.Control

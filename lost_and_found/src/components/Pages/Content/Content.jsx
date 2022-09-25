@@ -6,6 +6,7 @@ import InitialPage from '../initialPage/InitialPage';
 import Layout from '../../Layout/Layout';
 import FormAutorization from '../FormAutorization/FormAutorization';
 import Profile from '../Profile/Profile';
+import FoundItem from '../FoundItem/FoundItem';
 
 const Content = () => {
     return (
@@ -17,6 +18,7 @@ const Content = () => {
                     <Route path="/found" element={<Found/>}/>
                     <Route path="/autorizaton" element={<FormAutorization/>}/>
                     <Route path="/profile" element={<Profile/>}/>
+                    <Route path="/foundItem" element={<FoundItem/>}/>
                 </Routes>
             </main>
         </Layout>

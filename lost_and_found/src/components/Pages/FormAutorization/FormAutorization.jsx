@@ -4,7 +4,8 @@ import Context from '../../../Context';
 import s from './FormAutorization.module.scss';
 
 const FormAutorization = () => {
-    const {autorizationObj, setAutorizationObj} = useContext(Context)
+    const {autorizationObj, setAutorizationObj, getPost} = useContext(Context);
+    // console.log(autorizationObj)
     return (
         <section>
             <h2 className={s.form_title}>Sign In</h2> 
@@ -21,7 +22,12 @@ const FormAutorization = () => {
                     <Form.Control type="password" placeholder="Password"
                     onChange={e => setAutorizationObj({...autorizationObj, password: e.target.value})} />
                 </Form.Group>
-                <Button variant="primary" type="submit" className={s.btnauto}>Sign In</Button>
+                <Button variant="primary" type="submit" className={s.btnauto}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        // getPost(autorizationObj);
+                    }}
+                >Sign In</Button>
             </Form>
         </section>
     );
